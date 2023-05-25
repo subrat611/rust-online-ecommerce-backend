@@ -5,7 +5,13 @@ const PORT = 8000;
 
 const app = express();
 
-// Middlewares
+// connections
+
+
+// middlewares
 app.use(cors());
 
-app.listen(PORT, () => console.log(`Server Running On Port ${PORT}`));
+
+// routes
+
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
