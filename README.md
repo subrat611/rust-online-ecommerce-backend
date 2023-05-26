@@ -4,6 +4,28 @@
 
 ## API Endpoint
 
+- ### `GET` - `/api/products`
+
+  - Response - return all products
+
+  ```json
+  [
+    {
+      "_id": "6470ad64b27dcebd508c46e4",
+      "title": "IQOO Neo 7 5G (Frost Blue, 128 GB)  (8 GB RAM)",
+      "description": "na",
+      "price": 31990,
+      "rating": 0,
+      "stock": 100,
+      "category": "mobiles",
+      "images": [],
+      "createdAt": "2023-05-26T13:00:20.214Z",
+      "updatedAt": "2023-05-26T13:00:20.214Z",
+      "__v": 0
+    }
+  ]
+  ```
+
 - ### `POST` - `/api/products`
 - (payload) body -> raw -> json
 
