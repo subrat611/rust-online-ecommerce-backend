@@ -1,5 +1,10 @@
 const Product = require("../models/product.model");
 
+async function getAllProduct(req, res) {
+  const response = await Product.find({});
+  return res.status(200).json(response);
+}
+
 async function createProduct(req, res) {
   const {
     title,
@@ -43,5 +48,6 @@ async function createProduct(req, res) {
 }
 
 module.exports = {
+  getAllProduct,
   createProduct,
 };
