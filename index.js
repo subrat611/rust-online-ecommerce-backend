@@ -19,6 +19,6 @@ app.use(express.json({ limit: "50mb" }));
 app.use(cors());
 
 // routes
-app.use("/api/product", productRouter);
+app.use("/api/products", productRouter);
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
