@@ -9,19 +9,19 @@
 
   > Note: `productImage - base64 string`
 
-      ```json
-      {
-          "title": "String",
-          "description": "String",
-          "price": "Number",
-          "rating": "Number",
-          "stock": "Number",
-          "category": "String",
-          "productImage1": "String",
-          "productImage2": "String",
-          "productImage3": "String"
-      }
-      ```
+  ```json
+  {
+    "title": "String",
+    "description": "String",
+    "price": "Number",
+    "rating": "Number",
+    "stock": "Number",
+    "category": "String",
+    "productImage1": "String",
+    "productImage2": "String",
+    "productImage3": "String"
+  }
+  ```
 
 - Response
   ```json
