@@ -4,7 +4,7 @@
 
 ## API Endpoint
 
-- `POST` - `/api/products`
+- ### `POST` - `/api/products`
 - (payload) body -> raw -> json
 
   > Note: `productImage - base64 string`
