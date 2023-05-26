@@ -10,6 +10,7 @@ async function createProduct(req, res) {
     category,
     productImage1,
     productImage2,
+    productImage3,
   } = req.body;
 
   // validate the field
@@ -21,12 +22,13 @@ async function createProduct(req, res) {
     !stock ||
     !category ||
     !productImage1 ||
-    !productImage2
+    !productImage2 ||
+    !productImage3
   ) {
     return res.status(400).json({ message: "All fields are required" });
   }
 
-  const images = [productImage1, productImage2];
+  const images = [productImage1, productImage2, productImage3];
 
   const result = await Product.create({
     title,
