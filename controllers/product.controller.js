@@ -5,6 +5,12 @@ async function getAllProduct(req, res) {
   return res.status(200).json(response);
 }
 
+async function getProductById(req, res) {
+  const productId = req.params.id;
+  const response = await Product.findById(productId);
+  return res.status(200).json(response);
+}
+
 async function createProduct(req, res) {
   const {
     title,
@@ -49,5 +55,6 @@ async function createProduct(req, res) {
 
 module.exports = {
   getAllProduct,
+  getProductById,
   createProduct,
 };
