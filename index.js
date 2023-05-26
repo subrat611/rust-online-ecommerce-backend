@@ -13,7 +13,7 @@ const app = express();
 DBconnect().then(() => console.log(`Database Connected`));
 
 // middlewares
-app.use(express.json({limit: "50mb"}));
+app.use(express.json({ limit: "50mb" }));
 app.use(cors());
 
 // routes
