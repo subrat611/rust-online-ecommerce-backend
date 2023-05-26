@@ -10,7 +10,9 @@ const PORT = 8000;
 const app = express();
 
 // connections
-DBconnect().then(() => console.log(`Database Connected`));
+DBconnect()
+  .then(() => console.log(`Database Connected`))
+  .catch((err) => console.log(err));
 
 // middlewares
 app.use(express.json({ limit: "50mb" }));
