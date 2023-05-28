@@ -4,6 +4,7 @@ const cors = require("cors");
 const DBconnect = require("./config/mongodb");
 
 const productRouter = require("./routes/product.route");
+const userRouter = require("./routes/user.route");
 
 const PORT = 8000;
 
@@ -20,5 +21,6 @@ app.use(cors());
 
 // routes
 app.use("/api/products", productRouter);
+app.use("/api/users", userRouter);
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
